@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="{% static 'register.css' %}">
+</head>
+<body>
+    <nav>
+        <h1>Patient Register Form</h1>
+    </nav>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoTO_IlzQUhjER_Cd1399o1B0MDDr7lGcbb7ypE97Vpix58KuYMX5m8OWMEZQBDQnWERI&usqp=CAU" height="800px" width="1500px">
+    <form class="p" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input id="c" type="submit" value="submit" >
+    </form>
+    <a href="{% url 'myapp1:register1' %}"><button id="w">Hospital</button></a>
+</body>
+</html>

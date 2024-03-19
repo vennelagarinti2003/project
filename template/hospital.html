@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital</title>
+    <link rel="stylesheet" href="{% static 'hospital.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav>
+            
+            <div class="navbar">
+                  <ul>
+                        <li><a href="{% url 'home' %}"><i class="fa-solid fa-house"></i>Home</a></li>
+                        <li><a href="{% url 'blood' %}"><i class="fa-solid fa-droplet"></i>Blood Bank</a></li>
+                        <li><a href=""><i class="fa-solid fa-hospital-user"></i>Appointment List</a></li>
+                        <li><a href=""><i class="fa-solid fa-user-doctor"></i>Profile</a></li>
+                        <li><a href="{% url 'myapp1:register1' %}"><i class="fa-solid fa-house-medical"></i>Registration</a></li>
+                        <li><a href=""><i class="fa-solid fa-house-medical-circle-check"></i>Login</a></li>
+                  </ul>
+            </div>
+      </nav> <br><br><br>
+      <main>
+            <div class="images">
+                  <h1>Hospitals</h1>
+            </div>
+      </main>
+
+    
+</body>
+</html>

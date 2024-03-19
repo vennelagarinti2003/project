@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Management System</title>
+    <link rel="icon" href="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/85/99/59/85995914-780b-e6a0-5d99-f305784e0d4e/source/512x512bb.jpg ">
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav style="height: 80px;">
+        <div>
+            <img class="m" src="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/85/99/59/85995914-780b-e6a0-5d99-f305784e0d4e/source/512x512bb.jpg" height="80px" width="80px">
+            <a href=""><i class="fa-solid fa-house"></i>Home</a>
+            <a href="{% url 'myapp1:hospital' %}"><i class="fa-solid fa-hospital"></i>Hospital</a>
+            <a href="{% url 'blood' %}"><i class="fa-solid fa-droplet"></i>Blood Bank</a>
+            <a href=""><i class="fa-solid fa-user"></i>Profile</a>
+            <a href="{% url 'register' %}"><i class="fa-solid fa-house-medical"></i>Register</a>
+            <a href="{% url 'patientloginview' %}"><i class="fa-solid fa-house-medical-circle-check"></i></i>Login</a>
+        </div>
+    </nav>
+    <h1>About Diseases</h1>
+    <img src="https://naturesfieldng.com/wp-content/uploads/2021/02/cancer-cells-image.jpg" height="250px" width="250px">
+    <h2>CANCER</h2>
+    <p class="t">Cancer is a disease in which some of the body's cells grow uncontrollably and spread to other parts of the body <br>Cancer can start almost anywhere in the human body, which is made up of trillions of cells.Sometimes this orderly <br> process breaks down, and abnormal or damaged cells grow and multiply when they shouldnt.These cells may  <br>form tumors, which are lumps of tissue.</p>
+    <img id="v" src="https://cdn.synappsehealth.com/res-prod/img/blog/articles/hiv.png" height="250px" width="250px">
+    <h3>HIV(Human immunodeficiency virus)</h3>
+    <p id="s">HIV (human immunodeficiency virus) is a virus that attacks the body immune system. If HIV is not treated <br> it can lead to AIDS (acquired immunodeficiency syndrome).There is currently no effective Once people <br> get HIV, they have it for life.
+    But with proper medical care, HIV can be controlled.People with HIV who <br> get effective  HIV treatment can live long,healthy lives and protect their partners.</p>
+    <h4>DIABETES</h4>
+    <img id="s" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpCPmPY9P8sZCOufpGIoVaFCeQb2U5AvRWpw&usqp=CAU" height="300px" width="300px">
+    <p class="r">Diabetes is a chronic disease that occurs either when the pancreas does not produce <br> enough insulin or when the body cannot effectively use the insulin it produces <br> Insulin is a hormone that regulates blood glucose. Hyperglycaemia, also called raised blood glucose <br> or raised blood sugar, is a common effect of uncontrolled diabetes and over time leads to serious <br> damage to many of the body's systems, especially the nerves and blood vessels.</p>
+    <h6>CHICHENPOX</h6>
+    <p id="p">Chickenpox is a highly contagious disease caused by the varicella-zoster virus (VZV). <br>Chickenpox is a highly contagious disease caused by the varicella-zoster virus (VZV). <br> It can cause an itchy, blister-like rash among other symptoms. The rash first appears on the chest, <br> back, and face, and then spreads over the entire body.chickenpox or gotten the chickenpox vaccine can get <br> the disease. Chickenpox illness usually lasts about 4 to 7 days</p>
+    <img id="t" src="https://cdn-community.pressidium.com/wp-content/uploads/2019/09/Chicken-Pox-2.jpg" height="250px" width="250px">
+    <img id="f" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPYIyWxMXqbBm4cAAZBaTDZNE_9xJh6FIzeA&usqp=CAU"  height="250px" width="250px" >
+    <h5>MALARIA</h5>
+    <p id="q">Malaria is a mosquito-borne disease caused by a parasite. People with malaria often experience fever, chills, <br> and flu-like illness. Left untreated, they may develop severe complications and die. <br>Malaria is a serious disease caused by a parasite that infects a certain type of mosquito. <br>
+        Most people get malaria from the bite of an infective mosquito. <br>
+        Malaria can be a deadly disease if not diagnosed and treated quickly. Starting treatment as soon as possible can <br> often prevent severe illness and death.
+    </p>
+</body>
+</html>

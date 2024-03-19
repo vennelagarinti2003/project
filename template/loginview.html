@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+</head>
+<body>
+    <nav>
+        <h1>Patient Login Form</h1>
+    </nav>    
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoTO_IlzQUhjER_Cd1399o1B0MDDr7lGcbb7ypE97Vpix58KuYMX5m8OWMEZQBDQnWERI&usqp=CAU" height="800px" width="1500px">
+
+    <form method="post" class="p" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ a.as_p }}
+        <input type="submit" name="submit" id="c">
+    </form>
+    <a href="{% url 'myapp1:hospital' %}"><button id="w">Hospital</button></a>
+    
+</body>
+</html>
